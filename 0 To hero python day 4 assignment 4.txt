@@ -1,0 +1,43 @@
+ OTP Generator
+# Project - OTP Generator
+
+# You Can Generate 6 character OTP
+
+import random as r
+
+import string
+
+length = 8
+
+otp = ''
+
+characters = string.ascii_letters + string.digits
+
+print(characters)
+
+for i in range(length):
+
+  otp = otp + r.choice(characters)
+
+print("OTP:", otp)
+
+
+
+
+
+#python zero to hero day 4 assingment
+
+from temperature import Temperature
+ start_temp: Temperature = Temperature(120)
+ end_temp: Temperature = Temperature(90)
+ delta_t = start_temp - end_temp
+ delta_t
+Temperature(kelvin=30, celsius=-243.15, farenheit=-405.67, rankine=54.0)
+
+#project
+celsius = float(input("enter temperature in celsius: "))
+farenheit = (celsius * 9/5) + 32
+print('%.2f Celsius is: %0.2f Farenheit' %(celsius, farenheit))
+
+enter temperature in celsius: 62
+62.00 Celsius is: 143.60 Farenheit
